@@ -1,0 +1,13 @@
+job_id: 1
+system:
+  device: 0 
+  dtype: 32
+depth: 4
+num_heads: 4
+chr_id: 1
+nb_train_dnn: 5000
+nb_epochs: 200
+embed_dim: 24
+chr_start: 1
+chr_end: 3
+chr_train: 1
