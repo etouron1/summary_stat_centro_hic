@@ -918,7 +918,7 @@ def main(ctx: mlxp.Context)->None:
 
 
     ##################### TRAINING ON RANDOM GENOME #################################
-    if 0:
+    if 1:
         # writer = SummaryWriter(log_dir=path)
         patch_size = 4
         # C_ref = pad_input_C(patch_size, C_ref) # to give a size for the train set
@@ -1682,7 +1682,7 @@ def main(ctx: mlxp.Context)->None:
                 f.write(f"||theta_ref - DNN(C_ref)|| = {torch.sqrt(torch.mean((DNN(C_ref)*prior_range-theta_ref)**2))}")
     
     ##################### TEST ON THE BEST DNN ####################################
-    if 1:
+    if 0:
         patch_size = 4
 
         embed_dim = ctx.config['embed_dim'] #4*patch_size*patch_size
